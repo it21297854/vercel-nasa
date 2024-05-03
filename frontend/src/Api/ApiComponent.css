@@ -1,0 +1,50 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-top: 200px;
+  padding: 20px;
+}
+.heading {
+  font-size: 1.5rem;
+  margin-top: 100px;
+  padding: 20px;
+  text-align: center;
+}
+.media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin-top: 200px;
+  position: relative;
+}
+
+.media-container iframe,
+.media-container img {
+  max-width: 500px;
+  max-height: 400px;
+  border-radius: 10px; /* Add border radius for a rounded look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.media-container iframe {
+  position: absolute; /* Position iframe absolutely for proper centering */
+  top: 50%; /* Position iframe vertically at the center */
+  left: 50%; /* Position iframe horizontally at the center */
+  transform: translate(-50%, -50%); /* Center iframe precisely */
+}
+
+.explanation {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 20px;
+  margin-top: 200px;
+  background-color: #f9f9f9; /* Add background color to explanation */
+  border-radius: 10px; /* Add border radius for a rounded look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
