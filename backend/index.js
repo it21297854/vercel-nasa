@@ -7,10 +7,13 @@ app.use(express.json())
 app.use(cors())
 
 // Connect to MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/userManagement', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
+mongoose.connect(
+  'mongodb+srv://admin:admin@mern-vercel.gojdeyt.mongodb.net/?retryWrites=true&w=majority&appName=mern-vercel',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+)
 app.post('/register', (req, res) => {
   UserModel,
     UserModel.create(req.body)
