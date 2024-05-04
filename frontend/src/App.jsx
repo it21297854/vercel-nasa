@@ -14,7 +14,7 @@ function App() {
     <Router>
       <div>
         <Routes>
-          <Route exact path='/' element={<Login />} />
+          <Route exact path='/' element={<HomePage />} />
           <Route exact path='/home' element={<HomePage />} />
           <Route exact path='/Apod' element={<APODCompenent />} />
           <Route exact path='/Asteroid' element={<AsteroidPage />} />
