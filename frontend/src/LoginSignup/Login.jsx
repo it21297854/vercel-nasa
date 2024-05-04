@@ -27,7 +27,10 @@ const Login = () => {
     setValidated(true)
 
     axios
-      .post('http://localhost:3001/login', formData)
+      .post(
+        'https://vercel-nasa-khwyc3mz1-saraf-mmmss-projects.vercel.app/login',
+        formData
+      )
       .then((result) => {
         console.log(result)
         if (result.data === 'Success') {
