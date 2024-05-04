@@ -37,7 +37,9 @@ app.post('/login', (req, res) => {
 })
 
 const db = mongoose.connection
-
+app.get('/', (req, res) => {
+  res.json('Hello')
+})
 // Check MongoDB connection
 db.on('error', (error) => {
   console.error('MongoDB connection error:', error)
