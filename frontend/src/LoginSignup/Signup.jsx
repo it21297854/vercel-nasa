@@ -20,7 +20,7 @@ const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     axios
-      .post('https://vercel-nasa.vercel.app/register', formData)
+      .post('http://localhost:3001/register', formData)
       .then((response) => {
         console.log('Signup successful:', response.data)
         navigate('/login')
